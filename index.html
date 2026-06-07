@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flipz – Support & Confidentialité</title>
 
-    <!-- Google Fonts – Outfit (modern, premium) -->
+    <!-- Google Fonts – Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap"
@@ -13,153 +13,89 @@
 
     <style>
         :root {
-            --bg-color: #0d0f14;           /* dark background */
-            --card-bg: #161a23;            /* card background */
-            --accent-color: #6366f1;       /* primary accent (violet) */
-            --accent-hover: #4f46e5;       /* hover accent */
-            --text-primary: #f3f4f6;       /* main text */
-            --text-secondary: #9ca3af;     /* secondary text */
-            --border-color: #242b3d;       /* borders */
+            --bg-color: #0d0f14;
+            --card-bg: #161a23;
+            --accent-color: #6366f1;
+            --accent-hover: #4f46e5;
+            --text-primary: #f3f4f6;
+            --text-secondary: #9ca3af;
+            --border-color: #242b3d;
         }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
+        *{box-sizing:border-box;margin:0;padding:0}
+        body{
+            font-family:'Outfit',sans-serif;
+            background:var(--bg-color);
+            color:var(--text-primary);
+            line-height:1.6;
         }
-
-        body {
-            font-family: 'Outfit', sans-serif;
-            background: var(--bg-color);
-            color: var(--text-primary);
-            line-height: 1.6;
+        header{
+            background:linear-gradient(135deg,#1e1b4b 0%,#0d0f14 100%);
+            padding:60px 20px;
+            text-align:center;
+            border-bottom:1px solid var(--border-color);
         }
-
-        header {
-            background: linear-gradient(135deg, #1e1b4b 0%, #0d0f14 100%);
-            padding: 60px 20px;
-            text-align: center;
-            border-bottom: 1px solid var(--border-color);
+        .logo-emoji{font-size:4rem;animation:float 3s ease-in-out infinite;display:inline-block}
+        @keyframes float{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-10px) rotate(5deg)}}
+        h1{
+            font-size:2.5rem;font-weight:800;
+            background:linear-gradient(to right,#a5b4fc,#6366f1);
+            -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+            margin-bottom:10px;
         }
-
-        .logo-container {
-            margin-bottom: 20px;
+        .subtitle{color:var(--text-secondary);font-size:1.2rem;max-width:600px;margin:auto}
+        main{max-width:800px;margin:40px auto;padding:0 20px}
+        .card{
+            background:var(--card-bg);
+            border:1px solid var(--border-color);
+            border-radius:16px;padding:30px;margin-bottom:30px;
+            box-shadow:0 4px 20px rgba(0,0,0,.3);
+            transition:transform .2s ease;
         }
-
-        .logo-emoji {
-            font-size: 4rem;
-            animation: float 3s ease-in-out infinite;
-            display: inline-block;
+        .card:hover{transform:translateY(-2px)}
+        h2{
+            font-size:1.6rem;margin-bottom:20px;color:#a5b4fc;
+            display:flex;align-items:center;gap:10px;
         }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0) rotate(0deg); }
-            50% { transform: translateY(-10px) rotate(5deg); }
+        p,li{color:var(--text-secondary)}
+        ul{margin-bottom:20px;list-style-position:inside}
+        .btn{
+            background:var(--accent-color);color:#fff;padding:12px 24px;
+            border-radius:8px;text-decoration:none;font-weight:600;
+            transition:background .2s ease;border:none;cursor:pointer
         }
-
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            background: linear-gradient(to right, #a5b4fc, #6366f1);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 10px;
+        .btn:hover{background:var(--accent-hover)}
+        .contact-info{
+            background:rgba(99,102,241,.1);border-left:4px solid var(--accent-color);
+            padding:15px;border-radius:4px;margin-top:20px
         }
-
-        .subtitle {
-            color: var(--text-secondary);
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin: 0 auto;
+        footer{
+            text-align:center;padding:40px 20px;color:var(--text-secondary);
+            font-size:.9rem;border-top:1px solid var(--border-color);margin-top:60px
         }
-
-        main {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        .card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 20px rgba(0,0,0,.3);
-            transition: transform .2s ease;
-        }
-
-        .card:hover { transform: translateY(-2px); }
-
-        h2 {
-            font-size: 1.6rem;
-            margin-bottom: 20px;
-            color: #a5b4fc;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        p, li { color: var(--text-secondary); }
-
-        ul { margin-bottom: 20px; list-style-position: inside; }
-
-        .btn {
-            background: var(--accent-color);
-            color: #fff;
-            padding: 12px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: background .2s ease;
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn:hover { background: var(--accent-hover); }
-
-        .contact-info {
-            background: rgba(99,102,241,.1);
-            border-left: 4px solid var(--accent-color);
-            padding: 15px;
-            border-radius: 4px;
-            margin-top: 20px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 40px 20px;
-            color: var(--text-secondary);
-            font-size: .9rem;
-            border-top: 1px solid var(--border-color);
-            margin-top: 60px;
-        }
-
-        a { color: var(--accent-color); text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        a{color:var(--accent-color);text-decoration:none}
+        a:hover{text-decoration:underline}
     </style>
 </head>
 <body>
 
 <header>
-    <div class="logo-container">
-        <span class="logo-emoji">🚀</span>
-    </div>
+    <div class="logo-container"><span class="logo-emoji">🃏</span></div>
     <h1>Flipz</h1>
     <p class="subtitle">
-        Daily Card Quest – Ouvrez des boosters, complétez des quêtes et collectionnez des cartes épiques.
+        Daily Card Quest — Ouvrez des boosters, complétez des quêtes et collectionnez des cartes épiques.
     </p>
 </header>
 
 <main>
-    <!-- ========================= Support ========================= -->
+    <!-- Support -->
     <section class="card" id="support">
-        <h2>🛠️ Assistance & Support</h2>
-        <p>Un problème avec l’application ? Une suggestion d’amélioration ? Notre équipe est là pour vous aider.</p>
+        <h2>📬 Assistance &amp; Support</h2>
+        <p>Un problème avec l'application ? Une suggestion d’amélioration ? Notre équipe est là pour vous aider.</p>
         <p>Avant de nous contacter, vérifiez :</p>
         <ul>
-            <li>Vous avez bien la dernière version de l’application installée.</li>
-            <li>Votre connexion internet fonctionne correctement (les boosters nécessitent un accès réseau).</li>
+            <li>Vous avez la dernière version de l’application installée.</li>
+            <li>Votre connexion internet fonctionne (les boosters nécessitent un accès réseau).</li>
         </ul>
         <div class="contact-info">
             <p>Pour toute question ou demande d’assistance, écrivez‑nous directement par e‑mail :</p>
@@ -167,7 +103,7 @@
         </div>
     </section>
 
-    <!-- ========================= Confidentialité ========================= -->
+    <!-- Confidentialité -->
     <section class="card" id="privacy">
         <h2>🔒 Engagement de Confidentialité</h2>
         <p><em>Dernière mise à jour : 7 juin 2026</em></p>
@@ -176,14 +112,14 @@
         <h3>1️⃣ Collecte des données</h3>
         <p>Flipz ne recueille que le strict minimum nécessaire au bon fonctionnement du jeu :</p>
         <ul>
-            <li><strong>Données de jeu :</strong> scores, collections de cartes, streaks et progression dans les quêtes. Elles sont stockées localement ou sur nos serveurs sécurisés afin de synchroniser votre partie.</li>
+            <li><strong>Données de jeu :</strong> scores, collections de cartes, streaks et progression dans les quêtes. Stockées localement ou sur nos serveurs sécurisés pour synchroniser votre partie.</li>
             <li><strong>Publicités :</strong> si l’application affiche des publicités (AdMob), des identifiants publicitaires anonymes peuvent être utilisés pour vous proposer du contenu adapté, conformément aux règles d’Apple.</li>
         </ul>
 
         <h3>2️⃣ Partage des données</h3>
         <p>Nous ne vendons, n’échangeons ni ne transférons aucune donnée personnelle ou de jeu à des tiers.</p>
 
-        <h3>3️⃣ Consentement & contrôle</h3>
+        <h3>3️⃣ Consentement &amp; contrôle</h3>
         <p>Vous pouvez à tout moment réinitialiser vos identifiants publicitaires ou limiter le suivi via les réglages de confidentialité de votre appareil iOS.</p>
 
         <h3>4️⃣ Contact</h3>
@@ -195,8 +131,11 @@
 <footer>
     <p>&copy; 2026 Alban VIGNEAU. Tous droits réservés.</p>
     <p>Flipz est une application propulsée par Capacitor &amp; React.</p>
+    <!-- Lien obligatoire vers l'engagement de confidentialité -->
+    <p><a href="https://layce0.github.io/flipz-app/">Engagement de confidentialité</a></p>
 </footer>
 
 </body>
 </html>
+
 
