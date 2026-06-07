@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flipz - Daily Card Quest | Support & ConfidentialitÃ©</title>
+    <title>Flipz – Support & Confidentialité</title>
+
+    <!-- Google Fonts – Outfit (modern, premium) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap"
+          rel="stylesheet">
+
     <style>
         :root {
-            --bg-color: #0d0f14;
-            --card-bg: #161a23;
-            --accent-color: #6366f1;
-            --accent-hover: #4f46e5;
-            --text-primary: #f3f4f6;
-            --text-secondary: #9ca3af;
-            --border-color: #242b3d;
+            --bg-color: #0d0f14;           /* dark background */
+            --card-bg: #161a23;            /* card background */
+            --accent-color: #6366f1;       /* primary accent (violet) */
+            --accent-hover: #4f46e5;       /* hover accent */
+            --text-primary: #f3f4f6;       /* main text */
+            --text-secondary: #9ca3af;     /* secondary text */
+            --border-color: #242b3d;       /* borders */
         }
 
         * {
@@ -26,10 +30,9 @@
 
         body {
             font-family: 'Outfit', sans-serif;
-            background-color: var(--bg-color);
+            background: var(--bg-color);
             color: var(--text-primary);
             line-height: 1.6;
-            padding: 0;
         }
 
         header {
@@ -77,18 +80,16 @@
         }
 
         .card {
-            background-color: var(--card-bg);
+            background: var(--card-bg);
             border: 1px solid var(--border-color);
             border-radius: 16px;
             padding: 30px;
             margin-bottom: 30px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-            transition: transform 0.2s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,.3);
+            transition: transform .2s ease;
         }
 
-        .card:hover {
-            transform: translateY(-2px);
-        }
+        .card:hover { transform: translateY(-2px); }
 
         h2 {
             font-size: 1.6rem;
@@ -99,123 +100,103 @@
             gap: 10px;
         }
 
-        p {
-            color: var(--text-secondary);
-            margin-bottom: 15px;
-        }
+        p, li { color: var(--text-secondary); }
 
-        ul {
-            list-style-position: inside;
-            color: var(--text-secondary);
-            margin-bottom: 20px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
+        ul { margin-bottom: 20px; list-style-position: inside; }
 
         .btn {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: white;
+            background: var(--accent-color);
+            color: #fff;
             padding: 12px 24px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: 600;
-            transition: background-color 0.2s ease;
+            transition: background .2s ease;
             border: none;
             cursor: pointer;
         }
 
-        .btn:hover {
-            background-color: var(--accent-hover);
-        }
+        .btn:hover { background: var(--accent-hover); }
 
         .contact-info {
-            background-color: rgba(99, 102, 241, 0.1);
+            background: rgba(99,102,241,.1);
             border-left: 4px solid var(--accent-color);
             padding: 15px;
             border-radius: 4px;
             margin-top: 20px;
         }
 
-        .contact-info strong {
-            color: var(--text-primary);
-        }
-
         footer {
             text-align: center;
             padding: 40px 20px;
             color: var(--text-secondary);
-            font-size: 0.9rem;
+            font-size: .9rem;
             border-top: 1px solid var(--border-color);
             margin-top: 60px;
         }
 
-        a {
-            color: var(--accent-color);
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
+        a { color: var(--accent-color); text-decoration: none; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo-container">
-            <span class="logo-emoji">ðŸƒ</span>
+<header>
+    <div class="logo-container">
+        <span class="logo-emoji">🚀</span>
+    </div>
+    <h1>Flipz</h1>
+    <p class="subtitle">
+        Daily Card Quest – Ouvrez des boosters, complétez des quêtes et collectionnez des cartes épiques.
+    </p>
+</header>
+
+<main>
+    <!-- ========================= Support ========================= -->
+    <section class="card" id="support">
+        <h2>🛠️ Assistance & Support</h2>
+        <p>Un problème avec l’application ? Une suggestion d’amélioration ? Notre équipe est là pour vous aider.</p>
+        <p>Avant de nous contacter, vérifiez :</p>
+        <ul>
+            <li>Vous avez bien la dernière version de l’application installée.</li>
+            <li>Votre connexion internet fonctionne correctement (les boosters nécessitent un accès réseau).</li>
+        </ul>
+        <div class="contact-info">
+            <p>Pour toute question ou demande d’assistance, écrivez‑nous directement par e‑mail :</p>
+            <p>📧 <strong>wintak.group@gmail.com</strong></p>
         </div>
-        <h1>Flipz</h1>
-        <p class="subtitle">Daily Card Quest â€” Ouvrez des boosters, complÃ©tez des quÃªtes et collectionnez des cartes Ã©piques.</p>
-    </header>
+    </section>
 
-    <main>
-        <!-- Section Support / Assistance -->
-        <section class="card" id="support">
-            <h2>ðŸ“¬ Assistance & Support</h2>
-            <p>Un problÃ¨me avec l'application ? Une suggestion pour amÃ©liorer Flipz ? Notre Ã©quipe est lÃ  pour vous aider.</p>
-            <p>Avant de nous contacter, n'hÃ©sitez pas Ã  vÃ©rifier les points suivants :</p>
-            <ul>
-                <li>Assurez-vous d'avoir la derniÃ¨re version de l'application installÃ©e.</li>
-                <li>VÃ©rifiez votre connexion internet pour l'ouverture des boosters.</li>
-            </ul>
-            <div class="contact-info">
-                <p>Pour toute question ou demande d'assistance, Ã©crivez-nous directement par e-mail :</p>
-                <p>ðŸ“§ <strong>lcsrvrt@gmail.com</strong></p>
-            </div>
-        </section>
+    <!-- ========================= Confidentialité ========================= -->
+    <section class="card" id="privacy">
+        <h2>🔒 Engagement de Confidentialité</h2>
+        <p><em>Dernière mise à jour : 7 juin 2026</em></p>
+        <p>La protection de votre vie privée est notre priorité absolue. Cette politique décrit comment vos données sont traitées dans l’application Flipz.</p>
 
-        <!-- Section ConfidentialitÃ© -->
-        <section class="card" id="privacy">
-            <h2>ðŸ”’ Engagement de ConfidentialitÃ©</h2>
-            <p><em>DerniÃ¨re mise Ã  jour : 7 juin 2026</em></p>
-            <p>La protection de votre vie privÃ©e est notre prioritÃ© absolue. Cette politique dÃ©crit comment vos donnÃ©es sont traitÃ©es dans l'application Flipz.</p>
-            
-            <h3>1. Collecte des donnÃ©es</h3>
-            <p>Flipz est conÃ§u pour collecter le strict minimum d'informations nÃ©cessaires au bon fonctionnement du jeu :</p>
-            <ul>
-                <li><strong>DonnÃ©es de jeu :</strong> Vos scores, collections de cartes, streaks et progression dans les quÃªtes sont enregistrÃ©s localement ou sur nos serveurs sÃ©curisÃ©s pour vous permettre de synchroniser votre partie.</li>
-                <li><strong>PublicitÃ©s :</strong> Si l'application affiche des publicitÃ©s (AdMob), des identifiants publicitaires anonymes peuvent Ãªtre utilisÃ©s pour vous proposer du contenu adaptÃ©, conformÃ©ment aux rÃ¨gles d'Apple.</li>
-            </ul>
+        <h3>1️⃣ Collecte des données</h3>
+        <p>Flipz ne recueille que le strict minimum nécessaire au bon fonctionnement du jeu :</p>
+        <ul>
+            <li><strong>Données de jeu :</strong> scores, collections de cartes, streaks et progression dans les quêtes. Elles sont stockées localement ou sur nos serveurs sécurisés afin de synchroniser votre partie.</li>
+            <li><strong>Publicités :</strong> si l’application affiche des publicités (AdMob), des identifiants publicitaires anonymes peuvent être utilisés pour vous proposer du contenu adapté, conformément aux règles d’Apple.</li>
+        </ul>
 
-            <h3>2. Partage des donnÃ©es</h3>
-            <p>Nous ne vendons, n'Ã©changeons et ne transfÃ©rons aucune donnÃ©e personnelle ou de jeu Ã  des tiers.</p>
+        <h3>2️⃣ Partage des données</h3>
+        <p>Nous ne vendons, n’échangeons ni ne transférons aucune donnée personnelle ou de jeu à des tiers.</p>
 
-            <h3>3. Consentement et contrÃ´le</h3>
-            <p>Vous pouvez Ã  tout moment rÃ©initialiser vos identifiants publicitaires ou limiter le suivi via les rÃ©glages de confidentialitÃ© de votre appareil iOS.</p>
+        <h3>3️⃣ Consentement & contrôle</h3>
+        <p>Vous pouvez à tout moment réinitialiser vos identifiants publicitaires ou limiter le suivi via les réglages de confidentialité de votre appareil iOS.</p>
 
-            <h3>4. Contact</h3>
-            <p>Pour toute question relative Ã  vos donnÃ©es privÃ©es, contactez-nous Ã  l'adresse suivante : <strong>lcsrvrt@gmail.com</strong>.</p>
-        </section>
-    </main>
+        <h3>4️⃣ Contact</h3>
+        <p>Pour toute question relative à vos données privées, contactez‑nous à l’adresse suivante :</p>
+        <p>📧 <strong>wintak.group@gmail.com</strong></p>
+    </section>
+</main>
 
-    <footer>
-        <p>&copy; 2026 Alban VIGNEAU. Tous droits rÃ©servÃ©s.</p>
-        <p>Flipz est une application propulsÃ©e par Capacitor & React.</p>
-    </footer>
+<footer>
+    <p>&copy; 2026 Alban VIGNEAU. Tous droits réservés.</p>
+    <p>Flipz est une application propulsée par Capacitor &amp; React.</p>
+</footer>
 
 </body>
 </html>
+
