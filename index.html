@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flipz – Support & Confidentialité</title>
+    <title>Flipz – Support &amp; Confidentialité</title>
 
     <!-- Google Fonts – Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,59 +22,115 @@
             --border-color: #242b3d;
         }
 
-        *{box-sizing:border-box;margin:0;padding:0}
+        * { box-sizing:border-box; margin:0; padding:0; }
+
         body{
             font-family:'Outfit',sans-serif;
             background:var(--bg-color);
             color:var(--text-primary);
             line-height:1.6;
         }
+
         header{
             background:linear-gradient(135deg,#1e1b4b 0%,#0d0f14 100%);
             padding:60px 20px;
             text-align:center;
             border-bottom:1px solid var(--border-color);
         }
-        .logo-emoji{font-size:4rem;animation:float 3s ease-in-out infinite;display:inline-block}
-        @keyframes float{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-10px) rotate(5deg)}}
+
+        .logo-emoji{
+            font-size:4rem;
+            animation:float 3s ease-in-out infinite;
+            display:inline-block;
+        }
+
+        @keyframes float{
+            0%,100%{transform:translateY(0) rotate(0deg);}
+            50%{transform:translateY(-10px) rotate(5deg);}
+        }
+
         h1{
-            font-size:2.5rem;font-weight:800;
+            font-size:2.5rem;
+            font-weight:800;
             background:linear-gradient(to right,#a5b4fc,#6366f1);
-            -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+            -webkit-background-clip:text;
+            -webkit-text-fill-color:transparent;
             margin-bottom:10px;
         }
-        .subtitle{color:var(--text-secondary);font-size:1.2rem;max-width:600px;margin:auto}
-        main{max-width:800px;margin:40px auto;padding:0 20px}
+
+        .subtitle{
+            color:var(--text-secondary);
+            font-size:1.2rem;
+            max-width:600px;
+            margin:auto;
+        }
+
+        main{
+            max-width:800px;
+            margin:40px auto;
+            padding:0 20px;
+        }
+
         .card{
             background:var(--card-bg);
             border:1px solid var(--border-color);
-            border-radius:16px;padding:30px;margin-bottom:30px;
+            border-radius:16px;
+            padding:30px;
+            margin-bottom:30px;
             box-shadow:0 4px 20px rgba(0,0,0,.3);
             transition:transform .2s ease;
         }
-        .card:hover{transform:translateY(-2px)}
+
+        .card:hover{ transform:translateY(-2px); }
+
         h2{
-            font-size:1.6rem;margin-bottom:20px;color:#a5b4fc;
-            display:flex;align-items:center;gap:10px;
+            font-size:1.6rem;
+            margin-bottom:20px;
+            color:#a5b4fc;
+            display:flex;
+            align-items:center;
+            gap:10px;
         }
-        p,li{color:var(--text-secondary)}
-        ul{margin-bottom:20px;list-style-position:inside}
+
+        p, li{ color:var(--text-secondary); }
+
+        ul{ margin-bottom:20px; list-style-position:inside; }
+
         .btn{
-            background:var(--accent-color);color:#fff;padding:12px 24px;
-            border-radius:8px;text-decoration:none;font-weight:600;
-            transition:background .2s ease;border:none;cursor:pointer
+            background:var(--accent-color);
+            color:#fff;
+            padding:12px 24px;
+            border-radius:8px;
+            text-decoration:none;
+            font-weight:600;
+            transition:background .2s ease;
+            border:none;
+            cursor:pointer;
         }
-        .btn:hover{background:var(--accent-hover)}
+
+        .btn:hover{ background:var(--accent-hover); }
+
         .contact-info{
-            background:rgba(99,102,241,.1);border-left:4px solid var(--accent-color);
-            padding:15px;border-radius:4px;margin-top:20px
+            background:rgba(99,102,241,.1);
+            border-left:4px solid var(--accent-color);
+            padding:15px;
+            border-radius:4px;
+            margin-top:20px;
         }
+
+        .contact-info strong{ color:var(--text-primary); }
+
         footer{
-            text-align:center;padding:40px 20px;color:var(--text-secondary);
-            font-size:.9rem;border-top:1px solid var(--border-color);margin-top:60px
+            text-align:center;
+            padding:40px 20px;
+            color:var(--text-secondary);
+            font-size:.9rem;
+            border-top:1px solid var(--border-color);
+            margin-top:60px;
         }
-        a{color:var(--accent-color);text-decoration:none}
-        a:hover{text-decoration:underline}
+
+        a{ color:var(--accent-color); text-decoration:none; }
+        a:hover{ text-decoration:underline; }
     </style>
 </head>
 <body>
@@ -123,19 +179,30 @@
         <p>Vous pouvez à tout moment réinitialiser vos identifiants publicitaires ou limiter le suivi via les réglages de confidentialité de votre appareil iOS.</p>
 
         <h3>4️⃣ Contact</h3>
-        <p>Pour toute question relative à vos données privées, contactez‑nous à l’adresse suivante :</p>
-        <p>📧 <strong>wintak.group@gmail.com</strong></p>
+        <p>Pour toute question relative à vos données privées, contactez‑nous à l’adresse suivante :
+            <strong>wintak.group@gmail.com</strong>.
+        </p>
+
+        <h3>5️⃣ Gérer vos données</h3>
+        <p>
+            Vous avez le droit de modifier, supprimer ou contrôler l’utilisation de vos données.
+            Accédez à votre tableau de bord de gestion :
+        </p>
+        <a class="btn"
+           href="https://layce0.github.io/flipz-app/data-management.html"
+           target="_blank"
+           rel="noopener noreferrer">
+            Gérer mes données
+        </a>
     </section>
 </main>
 
 <footer>
     <p>&copy; 2026 Alban VIGNEAU. Tous droits réservés.</p>
     <p>Flipz est une application propulsée par Capacitor &amp; React.</p>
-    <!-- Lien obligatoire vers l'engagement de confidentialité -->
     <p><a href="https://layce0.github.io/flipz-app/">Engagement de confidentialité</a></p>
 </footer>
 
 </body>
 </html>
-
 
